@@ -116,9 +116,9 @@ app.delete('/iot/:iot_id', async (req, res) => {
 });
 // Configure AWS SDK
 AWS.config.update({
-    region: process.env.REGION,
-    accessKeyId: process.env.ACCESS_KEY_ID,
-    secretAccessKey: process.env.SECRET_ACCESS_KEY,
+    region: 'us-east-2',
+    accessKeyId: 'AKIA2UC3EM3GUM64P36P',
+    secretAccessKey: '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',
 });
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
